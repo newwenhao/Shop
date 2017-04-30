@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<config>
+    <sqlList name = "Address">
+        <sql id = "load">
+            select t1.id as 'a_id', t1.name as 'a_name', t1.phone as 'a_phone', t1.postcode as 'a_postcode', t2.id as 'user_id', t2.nickname, t2.password, t2.username, t2.type as 'user_type' from t_address t1 LEFT join t_user t2 on (t1.user_id = t2.id ) where user_id = 1
+        </sql>
+    </sqlList>
+</config>

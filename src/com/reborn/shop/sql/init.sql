@@ -16,6 +16,7 @@ create table t_address(
   phone varchar(100),
   postcode varchar(100),
   user_id int(11),
+
   CONSTRAINT FOREIGN KEY (user_id) references t_user (id)
 );
 
